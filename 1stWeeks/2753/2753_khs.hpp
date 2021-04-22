@@ -1,13 +1,11 @@
-//
-//  2753_khs.hpp
-//  Beakjoon
-//
-//  Created by 김형식 on 2021/04/22.
-//
+#include <iostream>
 
-#ifndef _753_khs_hpp
-#define _753_khs_hpp
-
-#include <stdio.h>
-
-#endif /* _753_khs_hpp */
+int main(){
+    int num;
+    
+    std::cin >> num;
+    
+    std::cout<< (((num % 4 == 0) && (num % 100 != 0)) || (num % 400 == 0));
+    
+    return 0;
+}
