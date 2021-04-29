@@ -69,11 +69,10 @@ int main(void)
 
 	buffer[0][1] = 1;
 	buffer[0][2] = 1;
-	while (true)
-	{
+	
 	cin >> num;
 	fibonacci(num);
 	fibonacci_print(num);
-
-	}
+	
+	return 0;
 }
