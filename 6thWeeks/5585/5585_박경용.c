@@ -1,3 +1,4 @@
+#pragma warning(disable:4996)
 #include <stdio.h>
 
 int coin[6] = { 500,100,50,10,5,1 };
@@ -12,6 +13,10 @@ int main(void)
 
 	while (money > 0)
 	{
+		count += money / coin[index];
+		money %= coin[index++];
+
+		/*
 		if (money >= coin[index])
 		{
 			money -= coin[index];
@@ -21,6 +26,7 @@ int main(void)
 		{
 			++index;
 		}
+		*/
 	}
 
 	printf("%d", count);
